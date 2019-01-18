@@ -1,0 +1,214 @@
+body {
+	background-color: rgba(45, 114, 225,0.8);
+	font-family: verdana, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	margin:0;
+}
+
+@keyframes fadeIn {
+	from { color: rgba(0,0,0,0); }
+	to { color: rgba(0,0,0,1); }
+}
+
+@font-face {
+	font-family: "ClockFont";
+	src: url(Digital-7.ttf);
+}
+
+#topBar{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left:0px;
+	background-color: rgba(88, 89, 91, 0.9);
+	width:100%;
+	padding: 10px 20px;
+	letter-spacing: 5px;
+	vertical-align: middle;
+	line-height: 40px;
+	z-index: 1;
+}
+
+#nameHeading {
+	display: inline-block;
+	color:black;
+}
+
+#topIcons {
+	position:fixed;
+	display: inline-block;
+	padding:0;
+	width:220px;
+	height:50px;
+	text-align: right;
+	transform:translateY(38%);
+	right: 20px;
+
+}
+
+#linkedin {
+	display: inline-block;
+	transform: translateY(0);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#github {
+	display: inline-block;
+}
+
+#clock {
+	position: absolute;
+	display: inline-block;
+	font-family: 'ClockFont', sans-serif;
+	text-align: center;
+	width: 80px;
+	height: 40px;
+	border-radius: 3px;
+	background-color: white;
+	right: 20px;
+	transform: translateY(7px);
+}
+
+#clockText {
+	font-size: 30px;
+	color:black;
+	letter-spacing: 0px;
+	transform: translateY(-22px);
+}
+
+#graffiti {
+	background-image: url(graffiti_low.gif);
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	line-height: 500px;
+}
+
+#centrePic {
+	display: block;
+	margin: 0 auto;
+	background-image: url(profile_low_res.gif);
+	background-size: cover;
+	z-index: -1;
+	width:150px;
+	height:150px;
+	top: 50%;
+	left: 50%;
+	transform: translateY(125%);
+	border-radius: 50%;
+}
+
+#schoolTitle {
+	display: block;
+	width: 500px;
+	height: 100px;
+	margin: 0 auto;
+	line-height: 1;
+	text-align: center;
+	transform: translateY(200%);
+	letter-spacing: 5px;
+	animation-name: fadeIn;
+	animation-duration: 3s;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.divideBar {
+	padding:3px 18px;
+	letter-spacing: 4px;
+	background-color: black;
+	color:white;
+	border-width: 2px;
+	height: 57px;
+	
+}
+
+.divideTitle {
+	display: inline-block;
+	color:white;
+	transform: translateY(3px);
+}
+
+#projTitle {
+	display: inline-block;
+	transform: translateY(2px);
+}
+
+.aboutCont {
+	background-color: rgba(100,100,100,1);
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	margin: 10px;
+	padding: 10px;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+	box-shadow: 5px 5px 2px rgba(0,0,0,1);
+}
+
+#appsCont {
+	background-color: rgba(100,100,100,1);
+	margin: 10px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	height: 125px;
+	box-shadow: 5px 5px 2px rgba(0,0,0,1);
+	transform: translateY(-0px);
+	text-align: center;
+
+}
+
+#mazeGame {
+	display: inline-block;
+	font-size: 10px;
+	color:black;
+	text-decoration: none;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-right: 20px;
+	background-color: rgba(158, 173, 216, 1);
+	transform: translateY(35px);
+	box-shadow: 5px 5px 2px rgba(0,0,0,1);
+	border-radius: 3px;
+	transition: transform 1s;
+}
+
+#mazeGame:hover {
+	transform: scale(1.2);
+}
+
+#weatherButton {
+	display: inline-block;
+	font-size: 10px;
+	color:black;
+	text-decoration: none;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: 20px;
+	background-color: rgba(158, 173, 216, 1);
+	transform: translateY(35px);
+	box-shadow: 5px 5px 2px rgba(0,0,0,1);
+	border-radius: 3px;
+	transition: transform 1s;
+}
+
+#weatherButton:hover {
+	transform: scale(1.2);
+}
+
+#gameCanvas {
+	display: block;
+	margin: 0 auto;
+	margin-top: 150px;
+	width:480px;
+	height:270px;
+	background-color: white;
+}
+
+
+
+
+
+

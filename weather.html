@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="weather.css">
+	<title>Weather</title>
+</head>
+<script type="text/javascript" src="weather.js"></script>
+<body>
+	<div id="topBar">
+		<a href="index.html">
+			<h1 id="nameHeading">Ben Huggard</h1>
+		</a>
+		<div id="topIcons">
+			<div id="linkedin">
+				<a href="https://www.linkedin/in/ben-huggard"><img src="Linked_Logo.gif" width = "30" height = "30"></a>
+			</div>
+			<div id="github">
+				<a href="https://github.com/BenHuggard"><img src="Github_logo.gif" width = "30" height = "30"></a>
+			</div>
+		</div>
+	</div>
+	<div id="weatherCont">
+		<h1 id="cityPrompt">Enter City ID</h1>
+		<form id="inputForm">
+			<input id="textIn" type="text">
+			<input type="button" onclick="getWeather()" value="Submit">
+		</form>
+		<h2 id="tempResponse">The temperature is...</h2>
+		<h1 id="temp"></h1>
+	</div>
+</body>
+
+</html>
