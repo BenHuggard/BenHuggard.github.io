@@ -4,7 +4,7 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Website Test </title>
+	<title>Welcome</title>
 </head>
 
 <body>
@@ -39,11 +39,11 @@
 	</div>
 	
 	<div class="aboutCont">
-		<p>My name is Ben Huggard. I am a first-year student at the University of Waterloo with a passion for science and technology. I built this simple website as a way for me to practice my HTML, CSS, and JavaScript skills.</p>
+		<p class="boldText">My name is Ben Huggard.</p><p> I am a first-year student at the University of Waterloo with a passion for science and technology. I built this simple website from scratch as a way for me to practice my HTML, CSS, and JavaScript skills.</p>
 	</div>
 	<div class="divideBar">
-		<div id="projTitle">
-			<h1>JAVASCRIPT PROJECTS (WIP)</h1>
+		<div class="divideTitle">
+			<h1>JAVASCRIPT PROJECTS</h1>
 		</div>
 		<div id="clock">
 			<p id="clockText"></p>
@@ -51,22 +51,38 @@
 	</div>
 	<br>
 	<div id="appsCont">
-		<a id="mazeGame" href= "mazegame.html">
-			<h1>PONG</h1>
-		</a>
-		<script type="text/javascript" src="weather.js"></script>
-		<a id="weatherButton" href="weather.html">
-			<h1>Weather</h1>
-		</a>
+		<div id="weatherCont">
+			<script type="text/javascript" src="city.list.json"></script>
+			<script type="text/javascript" src="apps.js">
+			</script>
+			<h1 id="cityPrompt">Tell me the weather in...</h1>
+			<form id="inputForm">
+				<input id="cityIn" type="text"  placeholder="City">
+				<input id="countryIn" type="text" placeholder="Country (Two character code)">
+			</form>
+			<div id="weatherButtonHolder">
+				<input id="weatherButton" type="button" onclick="getWeather()" value="GO">
+			</div>
+			<h2 id="tempResponse"></h2>
+			<h1 id="temp"></h1>
+		</div>
+		<div id="quotesCont">
+			<h1 id="quoteTitle">Random Quote Generator</h1>
+			<input id="quoteSubmit" type="button" onclick="getNewQuotes()" value="Generate new quote">
+			<p id="quoteBody"></p>
+		</div>
 	</div>
-
 	<div class="divideBar">
 		<div class="divideTitle">
 			<h1>CONTACT</h1>
 		</div>
 	</div>
-	<div class="aboutCont">
-		<p>Feel free to reach out to me at any time through my Email, benjamin.huggard@gmail.com. Thanks for visiting my site!</p>
+	<div id="contactCont">
+		<p>Feel free to reach out to me at any time.</p>
+		<br>
+		<p>By Email: benjaminhuggard@gmail.com</p>
+		<br>
+		<p>Or by phone: 1-902-717-4248</p>
 	</div>
 
 </body>
