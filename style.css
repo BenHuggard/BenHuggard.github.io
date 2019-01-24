@@ -78,7 +78,7 @@ body {
 	transform: translateY(-22px);
 }
 
-#graffiti {
+.graffiti {
 	background-image: url(e5_bg.gif);
 	height: 850px;
 	background-position: center;
@@ -265,6 +265,7 @@ body {
 	font-size: 15px;
 	transform: translateY(25px);
 }
+
 
 #contactCont {
 	background-color: rgba(255,255,255,1);
