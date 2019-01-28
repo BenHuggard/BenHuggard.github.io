@@ -14,7 +14,10 @@
 	</script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<title>Welcome</title>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<title id="headTitle">Welcome</title>
 </head>
 
 <body>
@@ -48,7 +51,7 @@
 	</div>
 	
 	<div class="aboutCont">
-		<p class="boldText">My name is Ben Huggard.</p><p>Thank you for visiting my site! I am a first-year student at the University of Waterloo with a passion for science and technology. I built this simple website from scratch as a way for me to develop my HTML5, CSS, and JavaScript skills. It is constantly under development so expect some changes in the future!</p>
+		<p class="boldText">My name is Ben Huggard.</p><p>Thank you for visiting my site! I am a first-year student at the University of Waterloo with a passion for science and technology. I built this simple website from scratch as a sandbox in which to develop my HTML5, CSS, and JavaScript skills. It is constantly under development so expect some changes in the future!</p>
 	</div>
 	<div class="divideBar">
 		<div class="divideTitle">
@@ -60,11 +63,11 @@
 	</div>
 	<br>
 	<div id="appsCont">
-		<div id="weatherCont">
+		<div class="cycler" id="chevLeft" onclick="cycleLeft()"></div>
+		<div class="app" id="weatherCont">
 			<script type="text/javascript" src="city.list.json"></script>
-			<script type="text/javascript" src="apps.js">
-			</script>
-			<h1 id="cityPrompt">Tell me the weather in...</h1>
+			<script type="text/javascript" src="apps.js"></script>
+			<h1 class="appTitle">Tell me the weather in...</h1>
 			<form id="inputForm">
 				<input id="cityIn" type="text"  placeholder="City">
 				<input id="countryIn" type="text" placeholder="Country (Two character code)">
@@ -75,11 +78,27 @@
 			<h2 id="tempResponse"></h2>
 			<h1 id="temp"></h1>
 		</div>
-		<div id="quotesCont">
+		<div class="app" id="quotesCont">
 			<h1 id="quoteTitle">Random Quote Generator</h1>
 			<input id="quoteSubmit" type="button" onclick="getNewQuotes()" value="Generate new quote">
 			<p id="quoteBody"></p>
 		</div>
+		<div class="app" id="pomoCont">
+			<script type="text/javascript" src="pomodoro.js"></script>
+			<h1 class="appTitle"> Pomodoro Timer</h1>
+			<h1 id="currentTime">25:00</h1>
+			<h2 class="timerOptions" onclick="Start()">START</h2>
+			<h2 class="timerOptions" id="stop" onclick="Stop()">STOP</h2>
+			<h2 class="timerOptions" onclick="Reset()">RESET</h2>
+			<br>
+			<h2 class="quickOptions" id="short" onclick="ChangeTime(5)">Short break</h2>
+			<h2 class="quickOptions" id="long" onclick="ChangeTime(10)">Long break</h2>
+			<form id="timeInput">
+				<input id="timeIn" type="text" placeholder="Custom Time">
+				<input id="timeSubmit" type="button" onclick="ChangeTime($('#timeIn')[0].value)" value="SET">
+			</form>
+		</div>
+		<div class="cycler" id="chevRight" onclick="cycleRight()"></div>
 	</div>
 	<div class="divideBar">
 		<div class="divideTitle">

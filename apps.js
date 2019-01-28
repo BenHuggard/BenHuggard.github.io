@@ -30,7 +30,6 @@ function getWeather() {
 
 function getNewQuotes() {
 	var quoteRequest = new XMLHttpRequest();
-	//let url = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
 	let url = "https://andruxnet-random-famous-quotes.p.rapidapi.com/?count=1&cat=famous";
 	quoteRequest.open('GET', url, true);
 	quoteRequest.setRequestHeader("X-RapidAPI-Key", "55eb3c7e49msh6d1b5051236a0dbp142337jsn6d30a4a7c064");
@@ -51,9 +50,13 @@ function getNewQuotes() {
 	quoteRequest.send();
 }
 
-function testForm() {
-	let input = document.getElementById('textIn').value;
-	alert(input);
-}
 
-//var cityList = JSON.parse("city.list.json");
+
+
+
+
+
+
+
+
+
