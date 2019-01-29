@@ -62,7 +62,7 @@ body {
 	height: 40px;
 	border-radius: 3px;
 	background-color: white;
-	right: 20px;
+	right: 40px;
 	transform: translateY(7px);
 }
 
@@ -253,8 +253,10 @@ body {
 }
 
 #quoteSubmit {
+	position: absolute;
+	right: 40px;
 	display: inline-block;
-	transform: translateY(-3px);
+	transform: translateY(5px);
 	margin-left: 20px;
 }
 

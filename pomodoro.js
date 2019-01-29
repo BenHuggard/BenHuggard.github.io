@@ -8,8 +8,8 @@ function ChangeTime(newTime) {
 
 function UpdateTimer() {
 	if(timeLeft == 0 && !alarmOff) {
-		alert("Time is Up!");
 		$("#headTitle")[0].innerHTML = "Times Up!";
+		alert("Time is Up!");
 		alarmOff = true;
 	}
 	else if(!stopped && !alarmOff) {
